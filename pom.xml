@@ -5,9 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <scm>
-    <connection>scm:git:ssh://git@github.com/ixxus/</connection>
-    <developerConnection>scm:git:ssh://git@github.com/ixxus/</developerConnection>
-    <url>https://github.com/ixxus/</url>
+    <connection>scm:git:ssh://git@github.com:sihutch/maven-git-test.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:sihutch/maven-git-test.git</developerConnection>
+    <url>https://github.com/sihutch/maven-git-test.git</url>
   </scm>
   
 </project>
