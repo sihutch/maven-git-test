@@ -1,13 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.si.test</groupId>
-  <artifactId>maven-git-test</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
-  
-  <scm>
-    <connection>scm:git:git@github.com:sihutch/maven-git-test.git</connection>
-    <developerConnection>scm:git:git@github.com:sihutch/maven-git-test.git</developerConnection>
-    <url>https://github.com/sihutch/maven-git-test.git</url>
-  </scm>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.si.test</groupId>
+	<artifactId>maven-git-test</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
+	
+	<repositories>
+        <repository>
+            <id>ixxus-nexus</id>
+            <url>http://172.16.10.149:8081/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>ixxus-releases</id>
+            <url>http://172.16.10.149:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <repository>
+            <id>ixxus-snapshots</id>
+            <url>http://172.16.10.149:8081/nexus/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+    
+	<distributionManagement>
+		<repository>
+			<id>ixxus-releases</id>
+			<url>http://172.16.10.149:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>ixxus-snapshots</id>
+			<url>http://172.16.10.149:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:git:git@github.com:sihutch/maven-git-test.git</connection>
+		<developerConnection>scm:git:git@github.com:sihutch/maven-git-test.git</developerConnection>
+		<url>https://github.com/sihutch/maven-git-test.git</url>
+	</scm>
+
 </project>
